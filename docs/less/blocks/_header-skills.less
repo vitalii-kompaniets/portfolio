@@ -1,0 +1,162 @@
+.profile-about {
+    
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.profile-about-skills {
+
+    @media (min-width: 768px) {
+        width: 340px;
+    }
+    
+    @media (min-width: 1200px) {
+        width: 650px;
+    }
+}
+
+.profile-about-title {
+    margin-bottom:30px;
+    
+    @media (min-width: 1200px) {
+        margin-bottom: 40px;
+    }
+}
+
+.my-skills {
+    margin-bottom: 35px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+
+    @media (min-width: 768px) {
+        margin-bottom: 0;
+    }
+    
+    @media (min-width: 1200px) {
+        font-size: 24px;
+        padding-left: 35px;
+        margin-bottom: 45px;
+    }          
+}
+
+.my-skills-item {
+    position: relative;
+    padding-bottom: 15px;
+
+    &:before {
+        display: none;
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        top: 30%;
+        left: -30px;
+        background-color: #444444;
+    }
+    
+    @media (min-width: 1200px) {
+        padding-bottom: 20px;
+        font-size: 24px;
+        line-height: 1.2; 
+
+        &:before {
+            display: block;
+        }
+    }
+}
+
+.button-my-projects {
+    display: none;
+    height: 60px;
+    padding: 18px 45px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--btnBg);
+
+    font-size: 22px;
+    font-weight: 700;
+    
+    &:hover {
+        background-color: #ffd200;
+    }
+
+    &:active {
+        background-color: #e1bc10;
+    }
+    
+    @media (min-width: 1200px) {
+        display: block;
+    }
+}
+
+.profile-contacts {
+
+    @media (min-width: 768px) {
+        width: 340px;
+    }
+    
+    @media (min-width: 1200px) {
+        width: 360px;
+    }
+}
+
+.profile-contacts-title {
+    margin-bottom: 25px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 25px;
+    }
+    
+    @media (min-width: 1200px) {
+        margin-bottom: 45px;
+    }
+}
+
+.profile-contacts-icons {
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 25px;
+    }
+    
+    @media (min-width: 1200px) {
+        margin-bottom: 35px;
+    }
+}
+
+.profile-contacts-icons a {
+    margin-right: 27px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.profile-contacts-email {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: underline;
+
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
+    
+    @media (min-width: 1200px) {
+        font-size: 24px;
+    }
+}
+
+.profile-contacts-email a {
+
+    &:hover {
+        color: #59b2ea;
+    }
+
+    &:active {
+        color: #eb736e;
+    }
+}
+  
