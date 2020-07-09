@@ -12,20 +12,7 @@
 }
 
 .portfolio-title {
-    position: relative;
     margin-bottom: 45px;
-    z-index: 2;
-
-    &:after {
-        content: "";
-        position: absolute;
-        bottom: 10px;
-        height: 10px;
-        left: -5px;
-        right: 765px;
-        background-color: var(--undrln);
-        z-index: -1;
-    }
 
     @media (min-width: 768px) {
         margin-bottom: 50px;
@@ -33,6 +20,36 @@
     
     @media (min-width: 1200px) {
         margin-bottom: 65px;
+    }
+}
+
+.line-bottom-portfolio {
+    position: relative;
+    z-index: 2;
+    
+    &:after {
+        content: "";
+        position: absolute;
+        height: 10px;
+        left: -5px;
+        right: -5px;
+        bottom: 13px;
+        background-color: var(--undrln);
+        z-index: -1;
+    }
+
+    @media (min-width: 768px) {
+
+        &:after {
+            bottom: 13px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+
+        &:after {
+            bottom: 16px;
+        }
     }
 }
 
@@ -50,7 +67,7 @@
 }
 
 .portfolio-nav-link {
-    font-size: 28px;
+    display: none;
     font-weight: 800;
     line-height: 1.2;
     color: rgb(143, 165, 174);
@@ -62,6 +79,15 @@
 
     &:hover {
         color: #000;
+    }
+
+    @media (min-width: 768px) {
+        display: inline;
+        font-size: 24px;
+    }
+    
+    @media (min-width: 1200px) {
+        font-size: 28px;
     }
 }
 

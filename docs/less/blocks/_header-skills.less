@@ -68,7 +68,7 @@
     }
 }
 
-.button-my-projects {
+.main-button {
     display: none;
     height: 60px;
     padding: 18px 45px;
@@ -128,6 +128,7 @@
 }
 
 .profile-contacts-icons a {
+    display: inline-block;
     margin-right: 27px;
 
     &:last-child {
@@ -138,7 +139,6 @@
 .profile-contacts-email {
     font-size: 18px;
     font-weight: 400;
-    text-decoration: underline;
 
     @media (min-width: 768px) {
         font-size: 20px;
@@ -150,13 +150,16 @@
 }
 
 .profile-contacts-email a {
+    border-bottom: 1px solid #000;
 
     &:hover {
         color: #59b2ea;
+        border-color: #59b2ea;
     }
 
     &:active {
         color: #eb736e;
+        border-color: #eb736e;
     }
 }
   

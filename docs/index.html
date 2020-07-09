@@ -48,7 +48,7 @@
                         </div>
 
                         <div class="header-buttons">
-                            <button class="button-meet">Познакомиться</button>
+                            <button onclick="window.location.href='#skills';" class="button-meet">Познакомиться</button>
                             <button class="button-contacts">Контакты</button>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
         </div>
 
         <!-- my-skills -->
-        <div class="header-skills">
+        <div class="header-skills" id="skills">
             <div class="container">
                 <div class="profile-about">
                     <div class="profile-about-skills">
@@ -80,7 +80,7 @@
                             </ul>
                         </div>
 
-                        <button class="button-my-projects">Смотреть работы</button>
+                        <button onclick="window.location.href='#portfolio';" class="main-button">Смотреть работы</button>
                     </div>
 
                     <div class="profile-contacts">
@@ -106,94 +106,159 @@
 
     </header>
 
-    <main class="section-portfolio">
-        <div class="container">
-            <h2 class="portfolio-title">
-                <div class="title-2">Портфолио</div>
-            </h2>
+    <main> 
+        <div class="section-portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="portfolio-title">
+                    <div class="title-2"><span class="line-bottom-portfolio">Портфолио</span></div>
+                </h2>
 
-            <nav class="portfolio-nav">
-                <a href="#" class="portfolio-nav-link">Все работы</a>
-                <a href="#" class="portfolio-nav-link">Bootstrap</a>
-                <a href="#" class="portfolio-nav-link">WordPress</a>
-                <a href="#" class="portfolio-nav-link">Frotend</a>
-            </nav>
+                <nav class="portfolio-nav">
+                    <a href="#" class="portfolio-nav-link">Все работы</a>
+                    <a href="#" class="portfolio-nav-link">Bootstrap</a>
+                    <a href="#" class="portfolio-nav-link">WordPress</a>
+                    <a href="#" class="portfolio-nav-link">Frotend</a>
+                </nav>
 
-            <div class="portfolio-top-row">
-                <div class="portfolio-item">
-                    <div class="portfolio-item-img">
-                        <img src="img/portfolio/forest-travel.jpg" alt="Форест Тревел">
+                <div class="portfolio-top-row">
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-img">
+                            <img src="img/portfolio/forest-travel.jpg" alt="Форест Тревел">
+                        </div>
+
+                        <div class="portfolio-item-title">
+                            <h4 class="title-4">Верстка "Форест Тревел"</h4>
+                        </div>
+
+                        <div class="portfolio-item-desc">
+                            Верстка многостраничного сайта.
+                        </div>
                     </div>
 
-                    <div class="portfolio-item-title">
-                        <h4 class="title-4">Верстка "Форест Тревел"</h4>
-                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-img">
+                            <img src="img/portfolio/imac.jpg" alt="Сайт для коворкинга">
+                        </div>
 
-                    <div class="portfolio-item-desc">
-                        Верстка многостраничного сайта.
-                    </div>
-                </div>
+                        <div class="portfolio-item-title">
+                            <h4 class="title-4">Сайт для коворгкинга "Мечта"</h4>
+                        </div>
 
-                <div class="portfolio-item">
-                    <div class="portfolio-item-img">
-                        <img src="img/portfolio/imac.jpg" alt="Сайт для коворкинга">
-                    </div>
-
-                    <div class="portfolio-item-title">
-                        <h4 class="title-4">Сайт для коворгкинга "Мечта"</h4>
-                    </div>
-
-                    <div class="portfolio-item-desc">
-                        Верстка лендинга.
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-bottom-row">
-                <div class="portfolio-item">
-                    <div class="portfolio-item-img">
-                        <img src="img/portfolio/world-auto-01.jpg" alt="Мир авто">
-                    </div>
-
-                    <div class="portfolio-item-title bottom-row-title">
-                        <h4 class="title-4">Верстка "Мир авто"</h4>
-                    </div>
-
-                    <div class="portfolio-item-desc bottom-row-desc ">
-                        Верстка многостраничного сайта.
+                        <div class="portfolio-item-desc">
+                            Верстка лендинга.
+                        </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item">
-                    <div class="portfolio-item-img">
-                        <img src="img/portfolio/world-auto-02.jpg" alt="Мир авто">
+                <div class="portfolio-bottom-row">
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-img">
+                            <img src="img/portfolio/world-auto-01.jpg" alt="Мир авто">
+                        </div>
+
+                        <div class="portfolio-item-title bottom-row-title">
+                            <h4 class="title-4">Верстка "Мир авто"</h4>
+                        </div>
+
+                        <div class="portfolio-item-desc bottom-row-desc ">
+                            Верстка многостраничного сайта.
+                        </div>
                     </div>
 
-                    <div class="portfolio-item-title bottom-row-title">
-                        <h4 class="title-4">Верстка "Мир авто"</h4>
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-img">
+                            <img src="img/portfolio/world-auto-02.jpg" alt="Мир авто">
+                        </div>
+
+                        <div class="portfolio-item-title bottom-row-title">
+                            <h4 class="title-4">Верстка "Мир авто"</h4>
+                        </div>
+
+                        <div class="portfolio-item-desc bottom-row-desc">
+                            Верстка многостраничного сайта.
+                        </div>
                     </div>
 
-                    <div class="portfolio-item-desc bottom-row-desc">
-                        Верстка многостраничного сайта.
-                    </div>
-                </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-img">
+                            <img src="img/portfolio/world-auto-03.jpg" alt="Мир авто">
+                        </div>
 
-                <div class="portfolio-item">
-                    <div class="portfolio-item-img">
-                        <img src="img/portfolio/world-auto-03.jpg" alt="Мир авто">
-                    </div>
+                        <div class="portfolio-item-title bottom-row-title">
+                            <h4 class="title-4">Верстка "Мир авто"</h4>
+                        </div>
 
-                    <div class="portfolio-item-title bottom-row-title">
-                        <h4 class="title-4">Верстка "Мир авто"</h4>
-                    </div>
-
-                    <div class="portfolio-item-desc bottom-row-desc">
-                        Верстка многостраничного сайта.
+                        <div class="portfolio-item-desc bottom-row-desc">
+                            Верстка многостраничного сайта.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="section-work">
+            <div class="container">
+                <div class="content-work">
+                    <div class="content-work-title">
+                        <h2 class="title-2">Как я работаю</h2>
+                    </div>
+                    
+                    <div class="cotnent-column">
+                        <div class="content-work-item">
+                            <div class="work-icon">
+                                <img class="work-img" src="img/work-icons/layers.svg" alt="Макет">
+                            </div>
+
+                            <div class="work-desc">
+
+                            </div>
+                        </div>
+
+                        <div class="content-work-item">
+                            <div class="work-icon">
+                                <img class="work-img" src="img/work-icons/presentation.svg" alt="График">
+                            </div>
+
+                            <div class="work-desc">
+                                
+                            </div>
+                        </div>
+
+                        <div class="content-work-item">
+                            <div class="work-icon">
+                                <img class="work-img" src="img/work-icons/time.svg" alt="Время">
+                            </div>
+
+                            <div class="work-desc">
+                                
+                            </div>
+                        </div>
+
+                        <div class="content-work-item">
+                            <div class="work-icon">
+                                <img class="work-img" src="img/work-icons/code.svg" alt="Код">
+                            </div>
+
+                            <div class="work-desc">
+                                
+                            </div>
+                        </div>
+
+                        <div class="content-work-item">
+                            <div class="work-icon">
+                                <img class="work-img" src="img/work-icons/diamond.svg" alt="Итог">
+                            </div>
+
+                            <div class="work-desc">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
 
     </main>
 
