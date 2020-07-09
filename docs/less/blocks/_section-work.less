@@ -1,29 +1,137 @@
 .content-work {
-    width: 1005px;
+    max-width: 1005px;
     margin: 0 auto;
     padding: 150px 0;
+}
+
+.content-work-title {
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+.line-bottom-work {
+    position: relative;
+    z-index: 2;
+    
+    &:after {
+        content: "";
+        position: absolute;
+        height: 10px;
+        left: -5px;
+        right: -5px;
+        bottom: 11px;
+        background-color: var(--undrln);
+        z-index: -1;
+    }
+
+    @media (min-width: 768px) {
+
+        &:after {
+            bottom: 12px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+
+        &:after {
+            bottom: 14px;
+        }
+    }
 }
 
 .cotnent-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .content-work-item {
+    position: relative;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 110px;
+        top: -67%;
+        left: 7%;
+        background-color: #e1eef4;
+    }
+
+    &:nth-child(1, 3, 5) {
+        flex-direction: row-reverse;
+    }
+}
+
+.work-desc__title {
+    margin-bottom: 15px;
+}
+
+.line-bottom-title5 {
+    position: relative;
+    z-index: 2;
     
+    &:after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        left: -2px;
+        right: -2px;
+        bottom: 2px;
+        background-color: var(--undrln);
+        z-index: -1;
+    }
+
+    @media (min-width: 768px) {
+
+        &:after {
+            bottom: 3px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+
+        &:after {
+            bottom: 4px;
+        }
+    }
 }
 
 .work-icon {
     width: 75px;
     height: 75px;
     border-radius: 28px;
+    margin-right: 35px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 3px 35px 0px rgba(0, 112, 187, 0.35);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.work-img {
-    top: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
+.work-icon-link svg {
+    width: 40px;
+    height: 40px;
+}
+
+.work-desc {
+    width: 375px;
+    padding-top: 20px;
+}
+
+.work-desc__info {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.work-desc__time {
+    font-size: 18px;
+    font-weight: 700;
 }

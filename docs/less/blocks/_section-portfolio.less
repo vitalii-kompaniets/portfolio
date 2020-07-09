@@ -33,7 +33,7 @@
         height: 10px;
         left: -5px;
         right: -5px;
-        bottom: 13px;
+        bottom: 11px;
         background-color: var(--undrln);
         z-index: -1;
     }
@@ -41,14 +41,14 @@
     @media (min-width: 768px) {
 
         &:after {
-            bottom: 13px;
+            bottom: 12px;
         }
     }
     
     @media (min-width: 1200px) {
 
         &:after {
-            bottom: 16px;
+            bottom: 14px;
         }
     }
 }
@@ -72,12 +72,14 @@
     line-height: 1.2;
     color: rgb(143, 165, 174);
     margin-right: 55px;
+    border: none;
+    background-color: transparent;
     
     &:last-child {
         margin-right: 0;
     }
 
-    &:hover {
+    &:hover, &:focus, &:active {
         color: #000;
     }
 
@@ -91,12 +93,13 @@
     }
 }
 
-.portfolio-top-row {
+.portfolio-projects {
     display: flex;
     flex-direction: column;
 
     @media (min-width: 768px) {
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 45px;
     }
@@ -106,21 +109,8 @@
     }
 }
 
-.portfolio-bottom-row {
-    display: flex;
-    flex-direction: column;
-
-    @media (min-width: 768px) {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    @media (min-width: 1200px) {
-    
-    }
-}
-
 .portfolio-item {
+    width: 560px;
     margin-bottom: 45px;
 
     @media (min-width:768px) {
