@@ -795,10 +795,13 @@ button {
     font-size: 20px;
   }
 }
+.section-work {
+  padding: 150px 0;
+  background-color: #fff;
+}
 .content-work {
   max-width: 1005px;
   margin: 0 auto;
-  padding: 150px 0;
 }
 .content-work-title {
   text-align: center;
@@ -839,12 +842,13 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .content-work-item {
   position: relative;
+  width: 631px;
   height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -854,20 +858,14 @@ button {
           justify-content: center;
   margin-bottom: 45px;
 }
-.content-work-item:after {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 110px;
-  top: -67%;
-  left: 7%;
-  background-color: #e1eef4;
-}
-.content-work-item:nth-child(1, 3, 5) {
+.content-work-item:nth-child(odd) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  text-align: right;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 .work-desc__title {
   margin-bottom: 15px;
@@ -901,6 +899,7 @@ button {
   height: 75px;
   border-radius: 28px;
   margin-right: 35px;
+  margin-left: 35px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 3px 35px 0px rgba(0, 112, 187, 0.35);
           box-shadow: 0px 3px 35px 0px rgba(0, 112, 187, 0.35);
@@ -913,6 +912,24 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.work-item-even:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 110px;
+  top: -67%;
+  left: 19%;
+  background-color: #e1eef4;
+}
+.work-item-odd:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 110px;
+  top: -67%;
+  right: 21%;
+  background-color: #e1eef4;
 }
 .work-icon-link svg {
   width: 40px;
