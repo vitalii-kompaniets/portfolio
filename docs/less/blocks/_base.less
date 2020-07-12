@@ -2,6 +2,16 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: #fbdc4d;
+}
+
+:focus {
+    outline: none;
+    border: dotted;
+    border-color: #ea736d;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -58,6 +68,15 @@ button {
         width: 1140px;
         margin: 0 auto;
         padding: 0;
+    }
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 27px;
+
+    &:last-child {
+        margin-right: 0;
     }
 }
 

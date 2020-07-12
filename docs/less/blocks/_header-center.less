@@ -9,7 +9,7 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
     }
     
     @media (min-width: 1200px) {
@@ -135,7 +135,7 @@
     border: none;
     padding-left: 45px;
     padding-right: 45px;
-    margin-right: 20px;
+    margin-right: 12px;
     background-color: var(--btnBg);
 
     font-size: 22px;
@@ -155,8 +155,8 @@
     border-radius: 35px;
     border: 4px solid rgb(70, 70, 70);
     background-color: transparent;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 38px;
+    padding-right: 38px;
 
     font-size: 22px;
     font-weight: 700;  
@@ -175,6 +175,7 @@
 
 .content-bg-image {
     max-width: 1600px;
+    transform: scale(1.8);
     margin-top: -45px;
 
     @media (min-width: 768px) {
@@ -184,5 +185,6 @@
     @media (min-width: 1200px) {
         margin-top: -117px;
         margin-bottom: 18px;
+        transform: scale(1);
     }
 }
