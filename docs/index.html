@@ -9,7 +9,7 @@
     <title>Портфолио</title>
 </head>
 <body>
-    
+
     <header class="header">
 
         <nav class="header-nav">
@@ -50,8 +50,8 @@
                         </div>
 
                         <div class="header-buttons">
-                            <button onclick="window.location.href='#skills';" class="button-meet">Познакомиться</button>
-                            <button onclick="window.location.href='#contacts';" class="button-contacts">Контакты</button>
+                            <a href="#skills" class="button-meet">Познакомиться</a>
+                            <a href="#contacts" class="button-contacts">Контакты</a>
                         </div>
                     </div>
                 </div>
@@ -64,10 +64,10 @@
         </div>
 
         <!-- my-skills -->
-        <div class="header-skills" id="skills">
+        <div class="header-skills">
             <div class="container">
                 <div class="profile-about">
-                    <div class="profile-about-skills">
+                    <div class="profile-about-skills"  id="skills">
                         <div class="profile-about-title">
                             <h3 class="title-3">Что я умею:</h3>
                         </div>
@@ -82,7 +82,9 @@
                             </ul>
                         </div>
 
-                        <button onclick="window.location.href='#portfolio';" class="main-button">Смотреть работы</button>
+                        <div class="my-works">
+                            <a href="#portfolio">Смотреть работы</a>
+                        </div>
                     </div>
 
                     <div class="profile-contacts">
@@ -107,7 +109,6 @@
             </div>
         </div>
         <!-- // my-skills -->
-
     </header>
 
     <main> 
@@ -125,52 +126,57 @@
                     <button class="portfolio-nav-link" data-filter=".front">Frontend</button>
                 </div>
 
+                <!-- portfolio cards -->
                 <div class="portfolio-projects" id="portfolio-projects">
-                    <div class="portfolio-works mix boots">
-                        <a href="#" class="portfolio-works__img">
-                            <img src="img/portfolio/forest-travel.jpg" alt="Форест Тревел">
+                    <div class="portfolio-works big-card mix boots">
+                        <a href="https://and-1.000webhostapp.com/forest-travel/index.html" class="portfolio-works__img" target="_blank">
+                            <img src="img/portfolio/card-01.jpg" alt="Форест Тревел">
                             <button class="more-btn">Смотреть проект</button>
                         </a>
 
                         <div class="portfolio-works__info">
-                            <div class="portfolio-works__title">
-                                <h4 class="title-4"><span>Верстка "Форест Тревел"</span></h4>
+                            <div class="portfolio-works__title big-card__title">
+                                <a href="https://and-1.000webhostapp.com/forest-travel/index.html" target="_blank">
+                                    <h4 class="title-5"><span>Верстка "Форест Тревел"</span></h4>
+                                </a>
                             </div>
 
-                            <div class="portfolio-works__desc">
+                            <div class="portfolio-works__desc big-card__desc">
                                 Верстка многостраничного сайта.
                             </div>
                         </div>
                     </div>
 
-                    <div class="portfolio-works mix wp">
-                        <a href="#" class="portfolio-works__img">
-                            <img src="img/portfolio/imac.jpg" alt="Сайт для коворкинга">
+                    <div class="portfolio-works big-card mix wp">
+                        <a href="https://and-1.000webhostapp.com/unit-project/index.html" class="portfolio-works__img" target="_blank">
+                            <img src="img/portfolio/card-02.jpg" alt="Проект ЮНИТ">
                             <button class="more-btn">Смотреть проект</button>
                         </a>
 
                         <div class="portfolio-works__info">
-                            <div class="portfolio-works__title">
-                                <h4 class="title-4"><span>Сайт для коворгкинга "Мечта"</span></h4>
-                            </div>
-
-                            <div class="portfolio-works__desc">
+                            <a href="https://and-1.000webhostapp.com/unit-project/index.html" target="_blank">
+                                <div class="portfolio-works__title big-card__title">
+                                    <h4 class="title-5"><span>Сайт "ЮНИТ"</span></h4>
+                                </div>
+                            </a>
+                            <div class="portfolio-works__desc big-card_desc">
                                 Верстка лендинга.
                             </div>
                         </div>
                     </div>
 
                     <div class="portfolio-works mix wp">
-                        <a href="#" class="portfolio-works__img">
-                            <img src="img/portfolio/world-auto-01.jpg" alt="Мир авто">
+                        <a href="index.html" class="portfolio-works__img">
+                            <img src="img/portfolio/card-03.jpg" alt="Портфолио">
                             <button class="more-btn">Смотреть проект</button>
                         </a>
 
                         <div class="portfolio-works__info">
-                            <div class="portfolio-works__title">
-                                <h4 class="title-4"><span>Верстка "Мир авто"</span></h4>
-                            </div>
-
+                            <a href="index.html">
+                                <div class="portfolio-works__title">
+                                    <h4 class="title-5"><span>Верстка "Портфолио"</span></h4>
+                                </div>
+                            </a>
                             <div class="portfolio-works__desc">
                                 Верстка многостраничного сайта.
                             </div>
@@ -178,43 +184,45 @@
                     </div>
 
                     <div class="portfolio-works mix front">
-                        <a href="#" class="portfolio-works__img">
-                            <img src="img/portfolio/world-auto-02.jpg" alt="Мир авто">
+                        <a href="https://and-1.000webhostapp.com/project-motocard/card.html" class="portfolio-works__img" target="_blank">
+                            <img src="img/portfolio/card-04.jpg" alt="Мотокарточка">
                             <button class="more-btn">Смотреть проект</button>
                         </a>
 
                         <div class="portfolio-works__info">
-                            <div class="portfolio-works__title">
-                                <h4 class="title-4"><span>Верстка "Мир авто"</span></h4>
-                            </div>
-
+                            <a href="https://and-1.000webhostapp.com/project-motocard/card.html" target="_blank">
+                                <div class="portfolio-works__title">
+                                    <h4 class="title-5"><span>Верстка "Мир Авто"</span></h4>
+                                </div>
+                            </a>
                             <div class="portfolio-works__desc">
-                                Верстка многостраничного сайта.
+                                Верстка мотокарточки.
                             </div>
                         </div>
                     </div>
 
                     <div class="portfolio-works mix boots front">
-                        <a href="#" class="portfolio-works__img">
-                            <img src="img/portfolio/world-auto-03.jpg" alt="Мир авто">
+                        <a href="https://and-1.000webhostapp.com/card-book/cardbook.html" class="portfolio-works__img" target="_blank">
+                            <img src="img/portfolio/card-05.jpg" alt="Карточка книги">
                             <button class="more-btn">Смотреть проект</button>
                         </a>
 
                         <div class="portfolio-works__info">
-                            <div class="portfolio-works__title">
-                                <h4 class="title-4"><span>Верстка "Мир авто"</span></h4>
-                            </div>
-
+                            <a href="https://and-1.000webhostapp.com/card-book/cardbook.html" target="_blank">
+                                <div class="portfolio-works__title">
+                                    <h4 class="title-5"><span>Верстка "Мир Книг"</span></h4>
+                                </div>
+                            </a>
                             <div class="portfolio-works__desc">
-                                Верстка многостраничного сайта.
+                                Верстка карточки книги.
                             </div>
                         </div>
                     </div>
-
                 </div>
+                <!-- // portfolio cards -->
             </div>
         </div>
-        <!-- // section portfolio -->
+        <!-- // section portfolio -->      
 
         <!-- section work -->
         <div class="section-work">
@@ -347,7 +355,7 @@
                                 </div>
 
                                 <div class="list-info">
-                                    <ul>
+                                    <ul class="page-link">
                                         <li><a href="mailto:vittiger09@gmail.com">vittiger09@gmail.com</a></li>
                                         <li><a href="#">vitaliy.kompaniets</a></li>
                                         <li><a href="tel:+79112800824">+7 (911) 280-08-24</a></li>
@@ -388,28 +396,29 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
         <!-- // section contacts -->
-
-        <!-- footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-title">
-                    &copy; 2019 — Виталий Компаниец                  
-                </div>
-                <div class="footer-text">
-                    <p>Веб-разработчик из Санкт-Петербурга, занимаюсь версткой и созданием сайтов.</p>
-                    <p>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a href="https://webcademy.ru/" target="_blank">WebCademy.ru</a></p>
-                </div>
-            </div>
-        </footer>
-        <!-- // footer -->
-
     </main>
 
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-title">
+                &copy; 2019 — Виталий Компаниец                  
+            </div>
+            <div class="footer-text">
+                <p>Веб-разработчик из Санкт-Петербурга, занимаюсь версткой и созданием сайтов.</p>
+                <p>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a href="https://webcademy.ru/" target="_blank">WebCademy.ru</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- // footer -->
+
+    <div id="backTop">
+        <a href="#top">
+            <i class="fas fa-angle-double-up"></i>
+        </a>
+    </div>
 
     <script src="libs/jquery/jquery-3.5.1.min.js"></script>
     <script src="libs/mixitup/mixitup.min.js"></script>

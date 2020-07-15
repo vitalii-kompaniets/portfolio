@@ -1,3 +1,7 @@
+.none {
+    display: none;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -25,6 +29,22 @@ html, body {
     margin: 0;
     font-family: 'M PLUS 1p', sans-serif;
     color: #000;
+}
+
+#backTop a {
+    color: #ea736d;
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    font-size: 40px;
+
+    &:hover {
+        color: #d4423b
+    }
+
+    &:focus {
+        border: none;
+    }
 }
 
 h1, h2, h3, h4, h5, p {
@@ -74,26 +94,35 @@ button {
 .social-icons a {
     display: inline-block;
     margin-right: 27px;
+    transition: 0.3s;
 
     &:last-child {
         margin-right: 0;
+    }
+
+    &:hover {
+        transition: 0.2s;
     }
 }
 
 .fa-github:hover, .fa-github:active {
     color: #6cc644;
+    transition: 0.2s;
 }
 
 .fa-telegram:hover, .fa-telegram:active {
     color: #039be5;
+    transition: 0.2s;
 }
 
 .fa-vk:hover, .fa-vk:active {
     color: #45668e;
+    transition: 0.2s;
 }
 
 .fa-facebook:hover, .fa-facebook:active {
     color: #3b5998;
+    transition: 0.2s;
 }
 
 .title-1 {
@@ -154,7 +183,7 @@ button {
 
 .title-5 {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 1.2;
 
     @media (min-width: 768px) {
@@ -163,5 +192,20 @@ button {
     
     @media (min-width: 1200px) {
         font-size: 26px;
+    }
+}
+
+.page-link a {
+    
+    &:hover {
+        color: #59b2ea;
+        border-bottom: 1px solid #59b2ea;
+        border-color: #59b2ea;
+    }
+
+    &:active {
+        color: #eb736e;
+        border-bottom: 1px solid #eb736e;
+        border-color: #eb736e;
     }
 }

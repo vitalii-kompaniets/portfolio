@@ -1,6 +1,9 @@
 .section-contacts {
-    padding: 140px 0 151px;
+    padding: 136px 0 152px;
     background-color: #f4f8f9;
+    background-image: url(../img/contacts-bg-lines.jpg);
+    background-position: center;
+    background-repeat: repeat;
 }
 
 .contacts-title {
@@ -15,7 +18,7 @@
     &:after {
         content: "";
         position: absolute;
-        height: 10px;
+        height: 12px;
         left: -5px;
         right: -5px;
         bottom: 13px;
@@ -31,14 +34,16 @@
 }
 
 .contacts-bg-img {
-    width: 555px;
+    width: 450px;
     position: absolute;
-    top: -10px;
-    left: -255px;
+    top: 0;
+    left: -350px;
 }
 
 .contacts-info {
+    position: relative;
     width: 555px;
+    z-index: 2;
 }
 
 .contacts-desc {
@@ -46,7 +51,7 @@
     font-size: 20px;
     line-height: 1.6;
     padding-top: 25px;
-    margin-bottom: 42px;     
+    margin-bottom: 44px;     
 }
 
 .contacts-desc__list {
@@ -78,12 +83,9 @@
     padding-bottom: 30px;
 }
 
-.list-info li a {
+.page-link a {
     color: #68b7ea;
-
-    &:hover {
-        text-decoration: underline;
-    }
+    transition: 0.3s;
 }
 
 .contacts-form {
@@ -157,11 +159,14 @@ textarea {
     padding-right: 40px;
     background-color: var(--btnBg);
     cursor: pointer;
+    transition: 0.3s;
+
     font-size: 22px;
     font-weight: 700;
 
     &:hover {
         background-color: #ffd200;
+        transition: 0.3s;
     }
 
     &:active {

@@ -24,3 +24,16 @@ for (let item of formInputs) {
         }
     })
 }
+
+// Back top button
+$('#backTop').hide();
+$(window).scroll(function () {
+    
+    if($(this).scrollTop() > 200) {
+        $('#backTop').fadeIn();
+    }
+
+    else {
+        $('#backTop').fadeOut();
+    }
+})

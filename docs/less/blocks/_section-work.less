@@ -1,11 +1,14 @@
 .section-work {
-    padding: 150px 0;
+    padding: 137px 0 101px;
     background-color: #fff;
+    background-image: url(../img/work-bg-lines.jpg);
+    background-position: center;
+    background-repeat: repeat;
 }
 
 .content-work-title {
     text-align: center;
-    margin-bottom: 158px;
+    margin-bottom: 154px;
 }
 
 .line-bottom-work {
@@ -15,12 +18,13 @@
     &:after {
         content: "";
         position: absolute;
-        height: 10px;
+        height: 12px;
         left: -5px;
         right: -5px;
         bottom: 11px;
         background-color: var(--undrln);
         z-index: -1;
+        transition: 0.3s;
     }
 
     @media (min-width: 768px) {
@@ -47,7 +51,7 @@
     position: relative;
     padding-left: 105px;
     height: 205px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 
     &:after {
         content: "";
@@ -75,16 +79,17 @@
         
         .line-bottom-title5:after {
             background-color: #ea736d;
+            transition: 0.3s;
         }
     }
 
     @media (min-width: 768px) {
         width: 50%;
-        padding-top: 17px;
+        padding-top: 22px;
 
         &:nth-child(even) {
             margin-left: auto;
-            padding-left: 79px;
+            padding-left: 87px;
         }
 
         &:nth-child(even) .work-icon {
@@ -98,7 +103,7 @@
         &:nth-child(odd) {
             text-align: right;
             padding-left: 0;
-            padding-right: 79px;
+            padding-right: 76px;
         }
 
         &:nth-child(odd):after {
