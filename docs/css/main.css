@@ -1124,32 +1124,29 @@ big-card__desc {
   margin-bottom: 44px;
 }
 .contacts-desc__list {
+  margin-bottom: 48px;
+}
+.contacts-desc__list-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 17px;
+  margin-bottom: 28px;
 }
-.list-titles {
+.contacts-desc__list-title {
   width: 165px;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
 }
-.list-titles li {
-  padding-bottom: 30px;
-}
-.list-info {
+.contacts-desc__list-info {
   width: 360px;
   font-size: 20px;
   font-weight: 500px;
   line-height: 1.2;
   color: #96969d;
-}
-.list-info li {
-  padding-bottom: 30px;
 }
 .page-link a {
   color: #68b7ea;
