@@ -1190,7 +1190,8 @@ input {
 }
 textarea:focus,
 input:focus {
-  border-color: #ea736d;
+  border: none;
+  border-bottom: 2px solid #ea736d;
 }
 textarea {
   height: 110px;
