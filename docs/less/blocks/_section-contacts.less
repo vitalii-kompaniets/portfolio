@@ -1,14 +1,30 @@
 .section-contacts {
-    padding: 136px 0 152px;
+    padding: 55px 0;
     background-color: #f4f8f9;
-    background-image: url(../img/contacts-bg-lines.jpg);
-    background-position: center;
-    background-repeat: repeat;
+
+    @media (min-width: 768px) {
+        padding: 80px 0 90px;
+    }
+    
+    @media (min-width: 1200px) {
+        padding: 136px 0 152px;
+        background-image: url(../img/contacts-bg-lines.jpg);
+        background-position: center;
+        background-repeat: repeat;
+    }
 }
 
 .contacts-title {
     text-align: center;
-    margin-bottom: 63px;
+    margin-bottom: 50px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 70px;
+    }
+    
+    @media (min-width: 1200px) {
+        margin-bottom: 63px;
+    }
 }
 
 .line-bottom-contacts {
@@ -21,37 +37,79 @@
         height: 12px;
         left: -5px;
         right: -5px;
-        bottom: 13px;
+        bottom: 7px;
         background-color: var(--undrln);
         z-index: -1;
+    }
+
+    @media (min-width: 768px) {
+        &:after {
+            bottom: 13px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+    
     }
 }
 
 .contacts-row {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+    
+    @media (min-width: 1200px) {
+    
+    }
 }
 
 .contacts-bg-img {
+    display: none;
     width: 450px;
     position: absolute;
     top: 0;
     left: -350px;
+    
+    @media (min-width: 1200px) {
+        display: block;
+    }
 }
 
 .contacts-info {
     position: relative;
-    width: 555px;
     z-index: 2;
+    margin-bottom: 40px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 0;
+    }
+    
+    @media (min-width: 1200px) {
+    
+    }
 }
 
 .contacts-desc {
-    max-width: 505px;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.6;
-    padding-top: 25px;
-    margin-bottom: 44px;     
+    margin-bottom: 25px;
+
+    @media (min-width: 768px) {
+        width: 300px;
+        margin-bottom: 44px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    @media (min-width: 1200px) {
+        font-size: 20px;
+        padding-top: 25px;
+    }    
 }
 
 .contacts-desc__list {
@@ -60,23 +118,41 @@
 
 .contacts-desc__list-item {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 28px;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+    
+    @media (min-width: 1200px) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 28px;
+    }
 }
 
 .contacts-desc__list-title {
-    width: 165px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 1.2;
+    margin-bottom: 5px;
+    
+    @media (min-width: 1200px) {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
 }
 
 .contacts-desc__list-info {
-    width: 360px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500px;
     line-height: 1.2;
-    color: rgb(150, 150, 157);  
+    color: rgb(150, 150, 157);
+    
+    @media (min-width: 1200px) {
+        font-size: 20px;
+    }
 }
 
 .page-link a {
@@ -85,21 +161,36 @@
 }
 
 .contacts-form {
-    width: 555px;
+    width: 290px;
+
+    @media (min-width: 768px) {
+        width: 340px;
+    }
+    
+    @media (min-width: 1200px) {
+        width: 555px;
+    }
 }
 
 .form-text {
-    width: 511px;
-    height: 545px;
     margin: 0 auto;
-    padding: 79px 60px 40px;
+    padding: 60px 15px 40px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 28px 100px 0px rgba(194, 219, 235, 1);    
+    box-shadow: 0px 28px 35px 0px rgba(194, 219, 235, 1);
+    
+    @media (min-width: 768px) {
+        padding: 65px 25px 40px;
+    }
+    
+    @media (min-width: 1200px) {
+        padding: 79px 60px 40px;
+        box-shadow: 0px 28px 100px 0px rgba(194, 219, 235, 1);
+    }
 }
 
 .contact-form__item {
     position: relative;
-    margin-bottom: 55px;
+    margin-bottom: 40px;
 }
 
 textarea, input {
@@ -148,8 +239,7 @@ textarea {
 }
 
 .contact-form__btn input {
-    width: auto;
-    height: 62px;
+    height: 55px;
     border: none;
     border-radius: 30px;
     padding-left: 40px;
@@ -168,5 +258,10 @@ textarea {
 
     &:active {
         background-color: #e1bc10;
+    }
+    
+    @media (min-width: 1200px) {
+        width: auto;
+        height: 62px;
     }
 } 

@@ -32,6 +32,7 @@ html, body {
 }
 
 #backTop a {
+    display: none;
     color: #ea736d;
     position: fixed;
     bottom: 40px;
@@ -44,6 +45,10 @@ html, body {
 
     &:focus {
         border: none;
+    }
+
+    @media (min-width: 768px) {
+        display: block;
     }
 }
 
@@ -182,12 +187,12 @@ button {
 }
 
 .title-5 {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 800;
     line-height: 1.2;
 
     @media (min-width: 768px) {
-        font-size: 22px;
+        font-size: 24px;
     }
     
     @media (min-width: 1200px) {
