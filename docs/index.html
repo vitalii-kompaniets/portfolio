@@ -10,24 +10,28 @@
 </head>
 <body>
 
+<div id="overlay"></div>
+
     <header class="header">
 
         <nav class="header-nav">
-            <nav class="header-nav-logo">
+            <div class="header-nav-logo">
                 <a href="index.html">ВК</a>
+            </div>
+
+            <nav class="header-menu"> 
+                <a href="index.html" class="header-menu__link">Главная</a>
+                <a href="#portfolio" class="header-menu__link">Работы</a>
+                <a href="#contacts" class="header-menu__link">Контакты</a>
             </nav>
 
-            <nav class="header-nav-link">
-                <a href="index.html">Главная</a>
-                <a href="#portfolio">Работы</a>
-                <a href="#contacts">Контакты</a>
+            <nav class="header-social">
+                <a href="#" class="header-social__item" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://github.com/vitalii-kompaniets/portfolio" class="header-social__item" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://vk.com/and_1" class="header-social__item" target="_blank"><i class="fab fa-vk fa-2x"></i></a>
             </nav>
 
-            <nav class="header-nav-icons">
-                <a href="#" class="icons-item" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="https://github.com/vitalii-kompaniets/portfolio" class="icons-item" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                <a href="https://vk.com/and_1" class="icons-item" target="_blank"><i class="fab fa-vk fa-2x"></i></a>
-            </nav>
+            <div class="toggle-menu"><span></span></div>
         </nav>
 
         <!-- main content -->

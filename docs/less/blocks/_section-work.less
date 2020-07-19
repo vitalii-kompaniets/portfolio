@@ -31,7 +31,6 @@
 .line-bottom-work {
     position: relative;
     z-index: 2;
-    font-size: 38px;
     
     &:after {
         content: "";
@@ -39,7 +38,7 @@
         height: 12px;
         left: -5px;
         right: -5px;
-        bottom: 7px;
+        bottom: 15px;
         background-color: var(--undrln);
         z-index: -1;
         transition: 0.3s;
@@ -127,6 +126,10 @@
         &:nth-child(odd) .work-icon {
             left: auto;
             right: -37px;
+        }
+
+        &:first-child {
+            height: 205px;
         }
 
         &:first-child:before {
