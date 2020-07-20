@@ -1,7 +1,6 @@
 .section-work {
     padding-top: 45px;
     background-color: #fff;
-   
 
     @media (min-width: 768px) {
         padding: 85px 0 85px;
@@ -31,6 +30,7 @@
 .line-bottom-work {
     position: relative;
     z-index: 2;
+    font-size: 38px;
     
     &:after {
         content: "";
@@ -38,10 +38,26 @@
         height: 12px;
         left: -5px;
         right: -5px;
-        bottom: 15px;
+        bottom: 6px;
         background-color: var(--undrln);
         z-index: -1;
         transition: 0.3s;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 52px;
+
+        &:after {
+            bottom: 11px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        font-size: 64px;
+
+        &:after {
+            bottom: 15px;
+        }
     }
 }
 
@@ -135,10 +151,6 @@
         &:first-child:before {
             display: block;
         }
-    }
-    
-    @media (min-width: 1200px) {
-    
     }
 }
 

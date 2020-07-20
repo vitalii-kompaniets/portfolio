@@ -10,31 +10,49 @@
 </head>
 <body>
 
-<div id="overlay"></div>
+    <div id="overlay"></div>
 
-    <header class="header">
+    <ul id="page-nav">
+        <li class="active">
+            <a href="#header"></a>
+        </li>
+        <li class="active">
+            <a href="#portfolio"></a>
+        </li>
+        <li class="active">
+            <a href="#section-work"></a>
+        </li>
+        <li class="active">
+            <a href="#contacts-form"></a>
+        </li>
+    </ul>
 
-        <nav class="header-nav">
-            <div class="header-nav-logo">
-                <a href="index.html">ВК</a>
-            </div>
+    <header class="header" id="header">
+        <!-- top menu -->
+        <div class="fix-menu">
+            <nav class="header-nav">
+                <div class="header-nav-logo">
+                    <a href="index.html">ВК</a>
+                </div>
 
-            <nav class="header-menu"> 
-                <a href="index.html" class="header-menu__link">Главная</a>
-                <a href="#portfolio" class="header-menu__link">Работы</a>
-                <a href="#contacts" class="header-menu__link">Контакты</a>
+                <nav class="header-menu"> 
+                    <a href="index.html" class="header-menu__link">Главная</a>
+                    <a href="#portfolio" class="header-menu__link">Работы</a>
+                    <a href="#contacts-form" class="header-menu__link">Контакты</a>
+                </nav>
+
+                <nav class="header-social">
+                    <a href="#" class="header-social__item" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="https://github.com/vitalii-kompaniets/portfolio" class="header-social__item" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://vk.com/and_1" class="header-social__item" target="_blank"><i class="fab fa-vk fa-2x"></i></a>
+                </nav>
+
+                <div class="toggle-menu"><span></span></div>
             </nav>
+        </div>
+        <!-- // top menu -->
 
-            <nav class="header-social">
-                <a href="#" class="header-social__item" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="https://github.com/vitalii-kompaniets/portfolio" class="header-social__item" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                <a href="https://vk.com/and_1" class="header-social__item" target="_blank"><i class="fab fa-vk fa-2x"></i></a>
-            </nav>
-
-            <div class="toggle-menu"><span></span></div>
-        </nav>
-
-        <!-- main content -->
+        <!-- header center -->
         <div class="header-center">
             <div class="container">
                 <div class="content">
@@ -55,19 +73,17 @@
 
                         <div class="header-buttons">
                             <a href="#skills" class="button-meet">Познакомиться</a>
-                            <a href="#contacts" class="button-contacts">Контакты</a>
+                            <a href="#contacts-form" class="button-contacts">Контакты</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- // main content -->
 
         <div class="content-bg-image">
             <img src="img/header-bg.png" alt="Рабочий стол">
         </div>
 
-        <!-- my-skills -->
         <div class="header-skills">
             <div class="container">
                 <div class="profile-about">
@@ -112,7 +128,7 @@
                 </div>
             </div>
         </div>
-        <!-- // my-skills -->
+        <!-- // header center -->
     </header>
 
     <main> 
@@ -236,7 +252,7 @@
         <!-- // section portfolio -->      
 
         <!-- section work -->
-        <div class="section-work">
+        <div class="section-work" id="section-work">
             <div class="container">
                 <div class="content-work">
                     <div class="content-work-title">
@@ -337,7 +353,7 @@
         <!-- section work -->
 
         <!-- section contacts -->
-        <div class="section-contacts" id="contacts">
+        <div class="section-contacts" id="contacts-form">
             <div class="container">
                 <div class="contacts-content">
                     <div class="contacts-title">
@@ -450,6 +466,8 @@
 
     <script src="libs/jquery/jquery-3.5.1.min.js"></script>
     <script src="libs/mixitup/mixitup.min.js"></script>
+    <script src="libs/jquery.validate/jquery.validate.js"></script>
+    <script src="js/hamburger-menu.js"></script>
     <script src="js/main.js"></script>
 
 </body>
