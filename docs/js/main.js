@@ -1,12 +1,4 @@
 $(document).ready(function () {
-    let containerEl = document.querySelector('#portfolio-projects');
-        let mixer = mixitup(containerEl, {
-            classNames: {
-                block: ""
-            }
-        }
-    );
-
     // Fix-menu
     window.addEventListener('scroll', function(){
         const fixMenu = document.querySelector('.fix-menu');
@@ -78,9 +70,9 @@ $(document).ready(function () {
             $('#backTop').fadeOut();
         }
     });
-
-    // Page Nav pagination
-    $('#page-nav').onePageNav({
+    
+    // Page nav pagination
+    $('#page-nav').OnePageNav({
         currentClass: 'active',
         changeHash: false,
         scrollSpeed: 750,
@@ -90,5 +82,5 @@ $(document).ready(function () {
         begin: function () {},
         end: function () {},
         scrollChange: function ($currentListItem) {}
-    })
+    });
 });

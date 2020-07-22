@@ -12,13 +12,19 @@
 }
 
 .portfolio-title {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 35px;
 
     @media (min-width: 768px) {
+        max-width: 770px;
         margin-bottom: 45px;
     }
     
     @media (min-width: 1200px) {
+        max-width: unset;
+        margin: 0;
         margin-bottom: 58px;
     }
 }
@@ -53,57 +59,29 @@
     }
 }
 
-.portfolio-nav {
-    display: none;
-
-    @media (min-width: 768px) {
-        display: block;
-        margin-bottom: 40px;
-    }
-    
-    @media (min-width: 1200px) {
-        margin-bottom: 47px;
-    }
-}
-
-.portfolio-nav-link {
-    display: none;
-    padding: 0;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 800;
-    line-height: 1.2;
-    color: rgb(143, 165, 174);
-    border: none;
-    background-color: transparent;
-    
-    &:last-child {
-        margin-right: 0;
-    }
-
-    &:hover, &:active {
-        color: #ed574f;
-    }
-
-    @media (min-width: 768px) {
-        display: inline;
-        margin-right: 40px;
-        font-size: 24px;
-    }
-    
-    @media (min-width: 1200px) {
-        font-size: 28px;
-        margin-right: 77px;
-    }
-}
-
 .portfolio-projects {
     display: flex;
     flex-direction: column;
 
-    @media (min-width: 768px) {
+    @media (min-width: 540px) {
+        max-width: 500px;
+        margin: 0 auto;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 770px;
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: unset;
+        margin: 0;
     }
 }
 
@@ -243,39 +221,5 @@
 
     @media (min-width: 1200px) {
         font-size: 22px;
-    }
-}
-
-.view-all-works {
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 400;
-    border-bottom: 1px solid #000;
-    transition: 0.3s;
-
-    &:hover {
-        color: #59b2ea;
-        border-color: #59b2ea;
-        transition: 0.3s;
-    }
-
-    &:active {
-        color: #eb736e;
-        border-color: #eb736e;
-    }
-    
-    @media (min-width: 1200px) {
-        display: none;
-    }
-}
-
-.hide-item {
-
-    @media (min-width: 768px) {
-        display: none;
-    }
-    
-    @media (min-width: 1200px) {
-        display: block;
     }
 }

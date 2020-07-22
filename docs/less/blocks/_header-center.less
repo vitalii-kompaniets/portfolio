@@ -6,6 +6,8 @@
 .content {
 
     @media (min-width: 768px) {
+        max-width: 810px;
+        margin: 0 auto;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -13,6 +15,8 @@
     }
     
     @media (min-width: 1200px) {
+        max-width: unset;
+        margin: 0;
         align-items: flex-end;
     }
 }
@@ -34,10 +38,14 @@
         z-index: -1;      
     }
 
+    @media (min-width: 350px) {
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
     @media (min-width: 768px) {
-        width: 340px;
         padding: 0 25px;
-        margin-bottom: 0;
+        margin: 0;
         z-index: 2;
 
         &:after {
@@ -48,6 +56,7 @@
     }
     
     @media (min-width: 1200px) {
+        max-width: unset;
         width: 455px;
         padding: 0;
 
