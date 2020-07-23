@@ -29,7 +29,7 @@ $(document).ready(function () {
         })
     };
 
-    // Form send
+    // Форма обратной связи
     $('#contacts-form').validate({
         rules: {
             email: {
@@ -72,7 +72,7 @@ $(document).ready(function () {
     });
     
     // Page nav pagination
-    $('#page-nav').OnePageNav({
+    $('#page-nav').onePageNav({
         currentClass: 'active',
         changeHash: false,
         scrollSpeed: 750,
