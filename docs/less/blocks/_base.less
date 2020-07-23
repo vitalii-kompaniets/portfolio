@@ -181,24 +181,48 @@ button {
     }
 }
 
-.fa-github:hover, .fa-github:active {
-    color: #6cc644;
-    transition: 0.2s;
+.header-social .fa-facebook {
+    color: #000;
 }
 
-.fa-telegram:hover, .fa-telegram:active {
+.header-social .fa-github {
+    color: #000;
+}
+
+.header-social .nav-vk-icon {
+    background-color: #000;
+}
+
+.fa-github {
+    color: #6cc644;
+
+    &:hover, &:active {
+        color: #81ee52;
+        transition: 0.2s;
+    }
+}
+
+.fa-telegram {
     color: #039be5;
-    transition: 0.2s;
+
+    &:hover, &:active {
+        color: #11bcff;
+        transition: 0.2s;
+    }
+}
+
+.fa-facebook {
+    color: #3b5998;
+
+    &:hover, &:active {
+        color: #4e75c9;
+        transition: 0.2s;
+    }
 }
 
 .fa-vk {
     display: block;
     color: #FFF;
-}
-
-.fa-facebook:hover, .fa-facebook:active {
-    color: #3b5998;
-    transition: 0.2s;
 }
 
 .vk-icon {
@@ -207,13 +231,13 @@ button {
     align-items: center;
     width: 48px;
     height: 48px;
-    background-color: #000;
+    background-color: #3e5a7c;
     border-radius: 50%;
     margin-right: 27px;
     cursor: pointer;
 
     &:hover, &:active {
-        background-color: #3e5a7c;
+        background-color: #5e86b8;
         transition: 0.2s;
     }
 }
