@@ -2,6 +2,20 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    font-family: 'M PLUS 1p', sans-serif;
+    color: #000;
+}
+
+body.active {
+    overflow: hidden;
+}
+
 ::selection {
     background-color: #fbdc4d;
 }
@@ -26,6 +40,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 5;
     display: none;
+    backdrop-filter: blur(3px);
 }
 
 #overlay.active {
@@ -47,7 +62,7 @@
 #page-nav li {
     width: 14px;
     height: 14px;
-    background-color: #89b4cb;
+    background-color: #fbdc4d;
     border-radius: 50%;
     margin-bottom: 25px;
     transition: 0.5s;
@@ -63,7 +78,7 @@
 }
 
 #page-nav li.active {
-    background-color: #ea736d;
+    background-color: #000;
 }
 
 .fix-menu.active {
@@ -78,22 +93,7 @@
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-html, body {
-    margin: 0;
-    font-family: 'M PLUS 1p', sans-serif;
-    color: #000;
-}
-
-body.active {
-    overflow: hidden;
-}
-
 #backTop a {
-    display: none;
     color: #ea736d;
     position: fixed;
     bottom: 40px;
@@ -108,8 +108,8 @@ body.active {
         border: none;
     }
 
-    @media (min-width: 768px) {
-        display: block;
+    @media (min-width: 1200px) {
+        display: none;
     }
 }
 
@@ -144,20 +144,26 @@ button {
 }
 
 .container {
+    max-width: 500px;
+    margin: 0 auto;
     padding: 0 15px;
 
     @media (min-width: 768px) {
+        max-width: unset;
         padding: 0 30px;
     }
     
     @media (min-width: 1200px) {
         width: 1140px;
-        margin: 0 auto;
         padding: 0;
     }
 }
 
-.social-icons a {
+.social-icons {
+    display: flex;
+}
+
+.social-icons__item {
     display: inline-block;
     margin-right: 27px;
     transition: 0.3s;
@@ -168,6 +174,10 @@ button {
 
     &:hover {
         transition: 0.2s;
+    }
+
+    &:focus, &:active {
+        border: none;
     }
 }
 
@@ -181,9 +191,9 @@ button {
     transition: 0.2s;
 }
 
-.fa-vk:hover, .fa-vk:active {
-    color: #45668e;
-    transition: 0.2s;
+.fa-vk {
+    display: block;
+    color: #FFF;
 }
 
 .fa-facebook:hover, .fa-facebook:active {
@@ -191,13 +201,27 @@ button {
     transition: 0.2s;
 }
 
-.social-icons__item {
-    display: block;
-    margin-right: 20px;
+.vk-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-right: 27px;
+    cursor: pointer;
 
-    &:last-child {
-        margin-right: 0;
+    &:hover, &:active {
+        background-color: #3e5a7c;
+        transition: 0.2s;
     }
+}
+
+.header-social .nav-vk-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
 }
 
 .title-1 {
@@ -267,20 +291,5 @@ button {
     
     @media (min-width: 1200px) {
         font-size: 26px;
-    }
-}
-
-.page-link a {
-    
-    &:hover {
-        color: #59b2ea;
-        border-bottom: 1px solid #59b2ea;
-        border-color: #59b2ea;
-    }
-
-    &:active {
-        color: #eb736e;
-        border-bottom: 1px solid #eb736e;
-        border-color: #eb736e;
     }
 }

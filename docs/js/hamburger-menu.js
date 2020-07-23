@@ -17,3 +17,10 @@ window.addEventListener('resize', function(){
     overlay.classList.remove('active');
     bodyElement.classList.remove('active');
 });
+
+mobMenu.addEventListener('click', function(){
+    this.classList.remove('active');
+    mobileMenuToggle.classList.remove('active');
+    overlay.classList.remove('active');
+    bodyElement.classList.remove('active');
+});

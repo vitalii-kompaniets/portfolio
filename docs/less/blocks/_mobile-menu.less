@@ -108,16 +108,6 @@
     }
 }
 
-.header-menu__links a {
-    width: fit-content;
-    border-bottom: 1px solid black;
-
-    @media (min-width: 1200px) {
-        width: auto;
-        border-bottom: none;
-    }
-}
-
 .header-menu__link-item {
     display: block;
     position: relative;
@@ -125,6 +115,8 @@
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 700;
+    width: fit-content;
+    border-bottom: 1px solid black;
 
     &:last-child {
         margin-bottom: 0;
@@ -149,6 +141,7 @@
     }
 
     @media (min-width: 1200px) {
+        width: auto;
         margin-right: 80px;
         margin-bottom: 0;
         border-bottom: none;
@@ -175,6 +168,10 @@
     @media (min-width: 1200px) {
         display: none;
     }
+}
+
+.header-menu__contacts a, .header-menu__contacts .vk-icon {
+    margin-right: 20px;
 }
 
 .header-menu__email a {
