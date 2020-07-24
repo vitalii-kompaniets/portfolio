@@ -524,8 +524,14 @@ button {
   background-color: var(--undrln);
   z-index: -1;
 }
+@media (min-width: 469px) {
+  .line-bottom:after {
+    right: -8px;
+  }
+}
 @media (min-width: 768px) {
   .line-bottom:after {
+    right: -5px;
     bottom: 12px;
   }
 }
