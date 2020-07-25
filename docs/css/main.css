@@ -1,3 +1,6 @@
+.none {
+  display: none;
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -78,8 +81,8 @@ body.active {
 }
 .fix-menu.active {
   position: fixed;
-  height: 80px;
-  padding-top: 10px;
+  height: 90px;
+  padding-top: 21px;
   top: 0;
   left: 0;
   right: 0;
@@ -371,7 +374,6 @@ button {
 }
 @media (min-width: 1440px) {
   .header-nav {
-    margin-bottom: 146px;
     padding: 0;
   }
 }
@@ -1252,6 +1254,7 @@ button {
 .section-work {
   padding-top: 45px;
   background-color: #fff;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .section-work {
