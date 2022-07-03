@@ -437,9 +437,6 @@ button {
   .content {
     max-width: unset;
     margin: 0;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
 }
 .content-photo {
